@@ -4,7 +4,7 @@ angular.module('playground.home.controllers', [])
         console.log('using home ctrl');
         var home = this;
 
-        home.user = UserService.getUser(); 
+        home.user = UserService.getUser();
 
-        home.message = "some ctrl as working";
+        home.hobbyToEdit = {};
     }]);
