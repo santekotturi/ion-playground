@@ -4,7 +4,8 @@ angular.module('playground.home.directives', [])
         return{
             restrict: 'EA',
             scope: {
-
+                title: "@title",
+                user: "="
             },
             replace: false,
             templateUrl: 'src/home/directive-templates/directiveOne.html',
@@ -18,7 +19,8 @@ angular.module('playground.home.directives', [])
         return{
             restrict: 'EA',
             scope: {
-
+                title: "@title",
+                user: "="
             },
             replace: false,
             templateUrl: 'src/home/directive-templates/directiveTwo.html',

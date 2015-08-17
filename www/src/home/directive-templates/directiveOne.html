@@ -1,4 +1,7 @@
 <div class="card">
-    <ion-item class="item-divider">Directive-One Header</ion-item>
-    <ion-item>Card Item</ion-item>
+    <ion-item class="item-divider">{{title}}</ion-item>
+    <ion-item>{{user.name}}</ion-item>
+    <ion-item>{{user.occupation}}</ion-item>
+    <ion-item class="item-divider">Hobbies:</ion-item>
+    <ion-item ng-repeat="hobby in user.hobbies">{{hobby.name}}</ion-item>
 </div>
