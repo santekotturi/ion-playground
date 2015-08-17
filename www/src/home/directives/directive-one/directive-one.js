@@ -1,4 +1,4 @@
-angular.module('playground.home.directives', [])
+angular.module('playground.home.directives')
 
     .directive('directiveOne', [ function () {
         return{
@@ -9,7 +9,7 @@ angular.module('playground.home.directives', [])
                 hobbyToEdit: "=?"
             },
             replace: false,
-            templateUrl: 'src/home/directive-templates/directiveOne.html',
+            templateUrl: 'src/home/directives/directive-one/directiveOne.html',
             link: function(scope, element, attrs){
                 console.log('registered directiveOne!');
 
@@ -27,26 +27,6 @@ angular.module('playground.home.directives', [])
                 };
 
 
-            }
-        }
-    }])
-
-    .directive('directiveTwo', [ function () {
-        return{
-            restrict: 'EA',
-            scope: {
-                title: "@title",
-                user: "=",
-                hobby: "=?hobbyToEdit"
-            },
-            replace: false,
-            templateUrl: 'src/home/directive-templates/directiveTwo.html',
-            link: function(scope, element, attrs){
-                console.log('registered directiveTwo!');
-
-                scope.$watch('hobby', function(newData){
-                    console.log('new hobby to edit: ', newData);
-                })
             }
         }
     }]);
