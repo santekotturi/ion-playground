@@ -3,24 +3,24 @@ angular.module('playground.services')
     .service('UserService', [function () {
         var user = {
                 name: 'Joe Smo',
-                occupation: 'bro',
+                occupation: 'Bro',
                 hobbies: [
                     {
                         name: 'beer drinking',
                         commitmentLevel: 'high',
-                        weeklyTime: '15',  //hrs
+                        weeklyTime: 15,  //hrs
                         doucheScore: 'low'
                     },
                     {
                         name: 'video gaming',
                         commitmentLevel: 'medium',
-                        weeklyTime: '10',  //hrs
+                        weeklyTime: 10,  //hrs
                         doucheScore: 'medium'
                     },
                     {
-                        name: 'hitting on fat chicks',
+                        name: 'cat calling women',
                         commitmentLevel: 'high',
-                        weeklyTime: '5',  //hrs
+                        weeklyTime: 5,  //hrs
                         doucheScore: 'high'
                     }
                 ]
