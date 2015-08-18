@@ -6,5 +6,5 @@ angular.module('playground.home.controllers', [])
 
         home.user = UserService.getUser();
 
-        home.hobbyToEdit = {};
+        home.hobby = {};
     }]);

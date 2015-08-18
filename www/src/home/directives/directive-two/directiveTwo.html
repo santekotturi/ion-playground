@@ -12,4 +12,9 @@
     <label class="item item-input">
         <input type="text" placeholder="Weekly Time (hrs)" ng-model="hobby.weeklyTime">
     </label>
-</div>
+    <div class="item">
+        <button class="button button-positive" ng-click="updateChanges()">Update</button>
+        <button class="button button-balanced" ng-click="saveNew()">Save New</button>
+        <button class="button button-energized" ng-click="clearValues()">Clear</button>
+    </div>
+

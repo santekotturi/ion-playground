@@ -6,7 +6,7 @@ angular.module('playground.home.directives')
             scope: {
                 title: "@title",
                 user: "=",
-                hobbyToEdit: "=?"
+                hobby: "=?"
             },
             replace: false,
             templateUrl: 'src/home/directives/directive-one/directiveOne.html',
@@ -19,13 +19,9 @@ angular.module('playground.home.directives')
 
                 scope.edit = function(hobby, index){
                     console.log('send hobby off to editing: ', hobby);
-                    scope.hobbyToEdit = hobby;
+                    scope.hobby = hobby;
+                    scope.hobby.index = index;
                 };
-
-                scope.remove = function (hobby, index) {
-
-                };
-
 
             }
         }
