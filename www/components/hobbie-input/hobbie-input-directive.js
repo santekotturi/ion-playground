@@ -1,6 +1,6 @@
 angular.module('playground.home.directives')
 
-    .directive('directiveTwo', [ 'UserService', function (UserService) {
+    .directive('hobbieInput', [ 'UserService', function (UserService) {
         return {
             restrict: 'EA',
             scope: {

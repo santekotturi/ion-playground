@@ -1,6 +1,6 @@
 angular.module('playground.home.directives')
 
-    .directive('directiveOne', [ function () {
+    .directive('hobbieCardList', [ function () {
         return{
             restrict: 'EA',
             scope: {
